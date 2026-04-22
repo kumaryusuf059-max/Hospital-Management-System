@@ -10,7 +10,7 @@ $current = $currentPage ?? '';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= h($pageTitle) ?> — Patient | Nexus Health</title>
+    <title><?= h($pageTitle) ?> â€” Patient | Dhami Hospital</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@ $current = $currentPage ?? '';
     <div class="dashboard-layout">
         <aside class="sidebar glass" id="sidebar">
             <div class="sidebar-brand">
-                <span class="logo-icon">◇</span>
+                <span class="logo-icon">â—‡</span>
                 <span>Patient<span class="logo-accent">Portal</span></span>
             </div>
             <nav class="sidebar-nav">
@@ -40,7 +40,7 @@ $current = $currentPage ?? '';
         </aside>
         <div class="dash-main">
             <header class="dash-topbar glass">
-                <button type="button" class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle menu">☰</button>
+                <button type="button" class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle menu">â˜°</button>
                 <h1 class="dash-title"><?= h($pageTitle) ?></h1>
                 <div class="dash-user"><?= h($_SESSION['patient_name'] ?? 'Patient') ?></div>
             </header>

@@ -38,14 +38,14 @@ require_once __DIR__ . '/../includes/patient_header.php';
 ?>
 
 <div class="invoice-page no-print flex-between" style="margin-bottom:16px;">
-    <a href="bills.php" class="btn btn--ghost">← Back</a>
+    <a href="bills.php" class="btn btn--ghost">â† Back</a>
     <button type="button" class="btn btn--primary" onclick="window.print()">Print / Save PDF</button>
 </div>
 
 <div class="glass invoice-print" id="invoice">
     <div class="flex-between" style="margin-bottom:24px;">
         <div>
-            <h2 style="margin:0;font-size:1.5rem;">Nexus Health</h2>
+            <h2 style="margin:0;font-size:1.5rem;">Dhami Hospital</h2>
             <p class="text-muted" style="margin:4px 0 0;font-size:0.9rem;">Invoice for patient</p>
         </div>
         <div style="text-align:right;">
@@ -77,7 +77,7 @@ require_once __DIR__ . '/../includes/patient_header.php';
         Status:
         <?php if ($b['status'] === 'paid'): ?>
             <span class="badge badge--paid">Paid</span>
-            <?php if ($b['paid_at']): ?> · <?= h($b['paid_at']) ?><?php endif; ?>
+            <?php if ($b['paid_at']): ?> Â· <?= h($b['paid_at']) ?><?php endif; ?>
         <?php else: ?>
             <span class="badge badge--pending">Pending payment</span>
         <?php endif; ?>

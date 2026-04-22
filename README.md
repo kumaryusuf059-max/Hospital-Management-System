@@ -1,4 +1,4 @@
-# Nexus Health — Hospital Management System
+# Dhami Hospital â€” Hospital Management System
 
 A complete, locally runnable **Hospital Management System** built with **HTML5**, **CSS3**, **vanilla JavaScript**, **PHP**, and **MySQL**. The interface uses a **dark, futuristic** aesthetic: **glassmorphism**, **neon blue/purple gradients**, **smooth hover states**, and **responsive** dashboard layouts.
 
@@ -6,7 +6,7 @@ A complete, locally runnable **Hospital Management System** built with **HTML5**
 
 ## Project overview
 
-Nexus Health provides:
+Dhami Hospital provides:
 
 - A **public landing page** with hero, services, about, and a **contact form** stored in the database.
 - **Session-based authentication** with **password hashing** (`password_hash` / `password_verify`).
@@ -42,11 +42,11 @@ Nexus Health provides:
 
 - Dashboard **overview** cards.
 - **Profile** editor (optional password change).
-- **Book appointments** (department, doctor, date/time) — **pending** until admin approves.
+- **Book appointments** (department, doctor, date/time) â€” **pending** until admin approves.
 - **Appointment history** with status.
 - **Medical reports** list with **secure PDF download** (owner-only).
 - **Bills** list and **invoice** view.
-- **Complaints** — submit and track resolution.
+- **Complaints** â€” submit and track resolution.
 
 ### Security notes (read before production)
 
@@ -84,14 +84,14 @@ Copy the `hospital-management-system` folder into your web root, for example:
 
 ### 3. Create the database
 
-**Option A — phpMyAdmin**
+**Option A â€” phpMyAdmin**
 
 1. Open `http://localhost/phpmyadmin`
 2. Click **Import**
 3. Choose `database/schema.sql`
 4. Click **Go**
 
-**Option B — MySQL CLI**
+**Option B â€” MySQL CLI**
 
 ```bash
 mysql -u root -p < database/schema.sql
@@ -157,35 +157,35 @@ Patients are created via **registration** or **admin registration** (no default 
 
 ```
 hospital-management-system/
-├── admin/                 # Admin panel pages
-├── patient/               # Patient portal pages
-├── assets/
-│   ├── css/style.css      # Global futuristic theme
-│   ├── js/main.js         # UI toggles, confirm hooks
-│   └── images/            # Optional assets / screenshots
-├── database/
-│   └── schema.sql         # MySQL schema + sample tests
-├── includes/
-│   ├── config.php         # DB settings
-│   ├── db.php             # PDO connection
-│   ├── functions.php      # Helpers, CSRF, sanitization
-│   ├── auth.php           # Session guards
-│   ├── departments.php    # Department list
-│   ├── header.php         # Public header (wrapper)
-│   ├── footer.php         # Public footer (wrapper)
-│   ├── header_public.php
-│   ├── footer_public.php
-│   ├── admin_header.php
-│   ├── admin_footer.php
-│   ├── patient_header.php
-│   └── patient_footer.php
-├── uploads/reports/       # Stored PDFs (created on upload)
-├── index.php              # Landing page
-├── login.php
-├── register.php
-├── logout.php
-├── setup.php              # One-time admin seed (remove after use)
-└── README.md
+â”œâ”€â”€ admin/                 # Admin panel pages
+â”œâ”€â”€ patient/               # Patient portal pages
+â”œâ”€â”€ assets/
+â”‚   â”œâ”€â”€ css/style.css      # Global futuristic theme
+â”‚   â”œâ”€â”€ js/main.js         # UI toggles, confirm hooks
+â”‚   â””â”€â”€ images/            # Optional assets / screenshots
+â”œâ”€â”€ database/
+â”‚   â””â”€â”€ schema.sql         # MySQL schema + sample tests
+â”œâ”€â”€ includes/
+â”‚   â”œâ”€â”€ config.php         # DB settings
+â”‚   â”œâ”€â”€ db.php             # PDO connection
+â”‚   â”œâ”€â”€ functions.php      # Helpers, CSRF, sanitization
+â”‚   â”œâ”€â”€ auth.php           # Session guards
+â”‚   â”œâ”€â”€ departments.php    # Department list
+â”‚   â”œâ”€â”€ header.php         # Public header (wrapper)
+â”‚   â”œâ”€â”€ footer.php         # Public footer (wrapper)
+â”‚   â”œâ”€â”€ header_public.php
+â”‚   â”œâ”€â”€ footer_public.php
+â”‚   â”œâ”€â”€ admin_header.php
+â”‚   â”œâ”€â”€ admin_footer.php
+â”‚   â”œâ”€â”€ patient_header.php
+â”‚   â””â”€â”€ patient_footer.php
+â”œâ”€â”€ uploads/reports/       # Stored PDFs (created on upload)
+â”œâ”€â”€ index.php              # Landing page
+â”œâ”€â”€ login.php
+â”œâ”€â”€ register.php
+â”œâ”€â”€ logout.php
+â”œâ”€â”€ setup.php              # One-time admin seed (remove after use)
+â””â”€â”€ README.md
 ```
 
 ---
